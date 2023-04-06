@@ -21,7 +21,7 @@ class MovieGallery extends React.Component {
         throw new Error("Failed to fetch movies");
       }
       const moviesObj = await response.json();
-      this.setState({ movies: moviesObj.Search, title: moviesObj.Title, loading: false });
+      this.setState({ movies: moviesObj.Search, title: moviesObj.title, loading: false });
     } catch (error) {
       this.setState({ error, loading: false });
     }
