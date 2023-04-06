@@ -6,6 +6,8 @@ import MovieGallery from "./Components/MovieGallery";
 import MyFooter from "./Components/MyFooter";
 import MovieDetails from "./Components/MovieDetails";
 import TVShows from "./Components/TvShows";
+import ListMovie from "./Components/ListMovie";
+
 function App() {
   return (
     <Router>
@@ -17,7 +19,6 @@ function App() {
         <Route path="/TvShows" element={<TVShows />} />
         <Route path="/MovieDetails/:movieId" element={<MovieDetails />} />
       </Routes>
-      <MovieGallery />
       <MyFooter />
     </Router>
   );
